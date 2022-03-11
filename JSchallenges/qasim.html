@@ -1,0 +1,39 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>This is my HTML</h1>
+    <p id="chck"></p>
+    <div id="demo"></div>
+    <script>
+        function tsf() {
+            const count = prompt('please enter value: ')
+
+            let out = 0;
+            for (let g = 0; g < count; g++) {
+
+                const first = prompt("enter first value:");
+                const second = prompt("enter second value:");
+                const third = prompt("enter third value:");
+                out = out + first + second + third;
+                document.write(out)
+                let a = document.getElementById('demo')
+                a.innerHTML = 'Hello world'
+                let b = document.getElementById('chck')
+                b.innerHTML = 'Hello TSF'
+                //plz explain 23 and 24  line
+                console.log(first, second, third)
+            }
+            return out;
+        }
+        tsf();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiDArray</title>
+</head>
+
+<body>
+    <h1>ARRAY</h1>
+    <script>
+
+        let head = ['Name', 'age', 'City', 'State', 'Profession'];
+        //how to bring axios or postman data here plz explain?
+        let arr = [
+            ['Tauseef', 29, 'Nagpur', 'Maharastra', 'Programmer'],
+            ['Ejaz', 25, 'Nagpur', 'Maharastra', 'Electrician'],
+            ['Khan', 35, 'Hyderabad', 'Telangana', 'software'],
+            ['Razi', 35, 'Nirmal', 'Telangana', 'Doctor'],
+            ['TSF', 35, 'Nirmal', 'Telangana', 'Doctor']
+        ];
+        document.write("<table border='1px'  cellspacing='0'>");
+        document.write('<tr>');
+
+        for (let h = 0; h < head.length; h++) {
+            document.write('<th>' + head[h] + '</th>')
+        }
+        document.write('</tr>');
+
+        for (let index = 0; index <= arr.length; index++) {
+            document.write('<tr>');
+
+
+            for (let j = 0; j < arr[index].length; j++) {
+                document.write('<td>' + arr[index][j] + '</td>')
+            }
+
+
+
+            document.write('</tr>')
+
+
+        }
+        document.write("</table>");
+
+
+    </script>
+
+</body>
+
+</html>

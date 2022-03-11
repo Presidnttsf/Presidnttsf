@@ -1,6 +1,8 @@
 function printPyramid(n) {
-    let numString = '';
+
     for (let index = 0; index <= n; index++) {
+        let numString = '';
+
 
         for (let j = index; j <= index; j++) {
             numString += j + ' ';
@@ -8,16 +10,12 @@ function printPyramid(n) {
             console.log(numString);
 
         }
-        for (let k = 0; k <= index; k++) {
-            numString += k + '  '
-
-        }
 
     }
 
 }
 
-printPyramid(11);
+// printPyramid(6);
 
 
 function checkPalindrome(text) {
@@ -29,7 +27,7 @@ function checkPalindrome(text) {
 
 }
 
-console.log(checkPalindrome('tits'));
+// console.log(checkPalindrome('tits'));
 
 let string = 'tauseef';
 console.log('split =', string.split(''))
@@ -78,33 +76,13 @@ function jhoomar(n) {
         for (let j = index; j < n.length; j++) {
             triangle += n[j] + ' ';
         }
-        console.log(space + triangle);
+        // console.log(space + triangle);
     }
 
 
 
 }
-console.log('This is jhoomar')
-jhoomar(("AHMEDANWAR".split('')))
+// console.log('This is jhoomar')
+// jhoomar(("AHMEDANWAR".split('')))
 jhoomar(("tauseefakhtar".split('')))
-jhoomar([1, 2, 3, 4].toString())
-
-let data = [{
-    name: "tauseef",
-    age: 29,
-    city: "Nagpur",
-}, {
-    name: "Ahmed",
-    age: 30,
-    city: "banglore",
-},];
-
-let data1 = [1, 2, 3]
-
-let v = data.map(test);
-function test(a) {
-    return a.name + ' is ' + a.age;
-
-}
-
-console.log(v)
+// jhoomar([1, 2, 3, 4].toString())

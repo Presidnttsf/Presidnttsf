@@ -1,4 +1,32 @@
-function addition(a) {
+function check(string) {
+    let stack = [];
+    let obj = {
+        '{': '}',
+        '(': ')',
+        '[': ']',
+    }
+    let openBr = Object.keys(obj);
+    let closeBr = Object.values(obj);
+    for (let index = 0; index < string.length; index++) {
+        const element = string[index];
+        if (openBr.includes(element)) {
+            stack.push(element)
+        }
+
+        if (closeBr.includes(element)) {
+            let a = stack.pop()
+            if (element != obj[a]) {
+                return (false)
+            }
+        }
+
+
+    }
+
+    return stack.length === 0;
+}
+
+console.log(check(`function addition(a) {
     // for (let index = 0; index < a.length; index++) {
     //     const element = a[index];
     //     // console.log(index, '=>', 'element = ', element)
@@ -88,7 +116,8 @@ console.log('*************Here I am testing string methods**************')
 let string = 'I am Tauseef Akhtar and I am learning Javascript.'
 console.log(tsf.join('+'))
 console.log(string.split(''))
-console.log(string.split('').join('*'))
+console.log(string.split('').join('*'))]
 
 
 
+`))
