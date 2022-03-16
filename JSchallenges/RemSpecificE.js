@@ -29,8 +29,9 @@ function Remove2(a, b) {
 }
 
 
-console.log(Remove2([1, 2, 3], 3));
+// console.log(Remove2([1, 2, 3], 3));
 console.log(Remove2([1, 2, '2'], '2'));
+console.log(Remove2([1, 2, '2', 'tsf', true], 'tsf'));
 
 
 // myFunction([1,2,3], 2)
